@@ -1,0 +1,1 @@
+/usr/bin/jackd -p 128 -R -P 60 -T -d alsa -C hw:0,0 -P hw:0,0 -n 2 -r 48000 -p 1024 
