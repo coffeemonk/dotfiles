@@ -2,10 +2,23 @@
 is_ubuntu || return 1
 
 # Package management
-alias update="sudo apt-get -qq update && sudo apt-get upgrade"
+alias update="sudo apt-get -qq update && sudo apt-get upgrade && sudo apt-get
+dist-upgrade"
 alias install="sudo apt-get install"
 alias remove="sudo apt-get remove"
 alias search="apt-cache search"
+alias clean="sudo apt-get autoclean && sudo apt-get autoremove"
+alias addrepo="sudo add-apt-repository"
+
+# System Maintenance
+alias dethumb="find . -name .@__thumb -print0 | xargs -0 rm -rf"
+alias reboot="sudo shutdown -r now"
+
+# Misc aliases
+alias DNGconvert="export
+WINEPREFIX=~/.local/share/bottles/adobedng;wine
+~/.local/share/bottles/adobedng/drive_c/Program\ Files\
+  \(x86\)/Adobe/Adobe\ DNG\ Converter.exe *.cr2"
 
 # Make 'less' more.
 [ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"

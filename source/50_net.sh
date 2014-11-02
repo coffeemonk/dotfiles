@@ -2,6 +2,9 @@
 alias wanip="dig +short myip.opendns.com @resolver1.opendns.com"
 alias whois="whois -h whois-servers.net"
 
+# ssh connections
+alias sshx13="ssh x13des@x13design.com"
+
 # Flush Directory Service cache
 alias flush="dscacheutil -flushcache"
 
