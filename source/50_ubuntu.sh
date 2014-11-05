@@ -2,8 +2,7 @@
 is_ubuntu || return 1
 
 # Package management
-alias update="sudo apt-get -qq update && sudo apt-get upgrade && sudo apt-get
-dist-upgrade"
+alias update="sudo apt-get -qq update && sudo apt-get upgrade && sudo apt-get dist-upgrade"
 alias install="sudo apt-get install"
 alias remove="sudo apt-get remove"
 alias search="apt-cache search"
