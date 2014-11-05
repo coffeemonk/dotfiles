@@ -14,6 +14,7 @@ alias dethumb="find . -name .@__thumb -print0 | xargs -0 rm -rf"
 alias reboot="sudo shutdown -r now"
 
 # Misc aliases
+alias svim="sudo vim"
 alias DNGconvert="export
 WINEPREFIX=~/.local/share/bottles/adobedng;wine
 ~/.local/share/bottles/adobedng/drive_c/Program\ Files\
